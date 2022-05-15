@@ -2,8 +2,6 @@ import React from "react";
 
 export default function Answers(props) {
   function determineColor() {
-    // console.log(props.answer +" is this answer correct " + props.isCorrect)
-
     if (props.isCorrect && props.revealAns) {
       return { backgroundColor: "green" };
     } else if (props.isChosen && props.isRight === -1 && props.revealAns) {
